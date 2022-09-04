@@ -7,6 +7,7 @@ const productRouter = require("./src/routes/product");
 const categoryRouter = require("./src/routes/category");
 const brandRouter = require("./src/routes/brands");
 const mailRouter = require("./src/routes/mail");
+const attactmentsRouter = require("./src/routes/attactments");
 
 
 dotenv.config();
@@ -23,6 +24,7 @@ app.use("/api/", productRouter);
 app.use("/api/", categoryRouter);
 app.use("/api/", brandRouter);
 app.use("/api/", mailRouter);
+app.use("/api/", attactmentsRouter);
 
 
 app.listen(process.env.PORT, () => {
